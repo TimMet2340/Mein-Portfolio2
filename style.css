@@ -135,6 +135,10 @@ ul {
     list-style-type: none;
 }
 
+.dot {
+    list-style-type: disc;
+}
+
 #birth::before {
     content: "";
     display: inline-block;
@@ -144,6 +148,48 @@ ul {
     background-size: cover;
     margin-right: 10px;
     }
+    
+#location::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("location-dot-solid-full.svg");
+    background-size: cover;
+    margin-right: 10px;
+    }
+
+#music::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("music-solid-full.svg");
+    background-size: cover;
+    margin-right: 10px;
+    }
+
+#picture::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("image-regular-full.svg");
+    background-size: cover;
+    margin-right: 10px;
+    }
+
+.school::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("graduation-cap-solid-full.svg");
+    background-size: cover;
+    margin-right: 10px;
+    }
+
+/*Verhalten nach Screen-Größe*/
 
 @media only screen and (min-width: 800px) {
     .parallel {
