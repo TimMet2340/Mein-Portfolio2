@@ -129,6 +129,22 @@ h2 {text-decoration: underline;}
     margin-bottom: 20px;
 }
 
+/* custom Listen-Symbole */
+
+ul {
+    list-style-type: none;
+}
+
+#birth::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("cake-candles-solid.svg");
+    background-size: cover;
+    margin-right: 10px;
+    }
+
 @media only screen and (min-width: 800px) {
     .parallel {
         display: flex;
