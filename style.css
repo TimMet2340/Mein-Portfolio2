@@ -25,7 +25,12 @@ h1 {
     text-shadow: 2px 2px 4px #000000;
 }
 
-h2 {text-decoration: underline;}
+h2 {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: black solid 1px;
+}
 
 .article {
     padding: 5px;
@@ -56,20 +61,24 @@ h2 {text-decoration: underline;}
 
 #songs {
     display: flex;
+    flex-wrap: wrap;
 }
+
+/*media query: kacheln ins center gerückt - in bearbeitung weils nicht klappt*/
 
 .song {
     margin: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.848);
     border-radius: 20px;
-
+    width: 200px;
 }
 
 .song_link {
@@ -78,7 +87,6 @@ h2 {text-decoration: underline;}
     font-size: auto;
     text-align: center;
 }
-
 
 #sidebar {
     background-color: black;
@@ -129,7 +137,13 @@ h2 {text-decoration: underline;}
     margin-bottom: 20px;
 }
 
-/* custom Listen-Symbole */
+.windowdek {
+    margin: 0;
+    background-color: rgba(92, 91, 91, 0.74);
+    text-align: right;
+}
+
+/* custom Listen-Symbole unterhalb */
 
 ul {
     list-style-type: none;
