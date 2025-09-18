@@ -1,12 +1,32 @@
+
+/* @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+} */
+
+.parallax-bg {
+    position: fixed;
+    top: 0;
+    left: 0;  /* Wichtig! */
+    width: 100%;
+    height: 300%;
+    background: url('BG.PNG') rgb(36, 40, 65);
+    background-repeat: repeat-y;
+    z-index: -1;
+    will-change: transform;  /* Performance */
+    backface-visibility: hidden;  /* Anti-Flackern */
+}
+
 body {
     font-size: large;
     font-family: "Sometype Mono", monospace, system-ui;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    background-color: rgb(36, 40, 65);
+    /*background-color: rgb(36, 40, 65);
     background-image: url(BG.PNG);
     background-attachment: fixed;
+    background-size: auto; */
     margin: 20px;
     padding: 20px;
 }
@@ -32,10 +52,24 @@ h2 {
     border-bottom: black solid 1px;
 }
 
+.windowdek {
+    /* das hier ist für die Fensterdeko */
+    margin: 0;
+    background-color: rgba(92, 91, 91, 0.74);
+    text-align: right;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+}
+
 .article {
     padding: 5px;
     border: 1px solid black;
     line-height: 1.5;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.603);
+}
+
+.outline {
+    outline: 5px solid rgb(61, 61, 61,0.6);
 }
 
 #intro {
@@ -121,7 +155,9 @@ h2 {
     backdrop-filter: blur(2px);
     padding: 10px;
     border: 1px solid black;
+    margin-top: 0px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.644);
 }
 
 .subtitle {
@@ -134,17 +170,22 @@ h2 {
 }
 
 #reference {
-    font-size: small 30%;
+    font-size: small;
+    color:rgb(153, 153, 153)
 }
 
 .distance {
     margin-bottom: 20px;
 }
 
-.windowdek {
-    margin: 0;
-    background-color: rgba(92, 91, 91, 0.74);
-    text-align: right;
+
+.description {
+    font-size: medium;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 /* custom Listen-Symbole unterhalb */

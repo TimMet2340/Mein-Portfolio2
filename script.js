@@ -1,3 +1,12 @@
+// paralellax scroll effect
+document.addEventListener('scroll', function() {
+    const scrolled = window.scrollY;
+    const parallax = document.querySelector('.parallax-bg');
+    parallax.style.transform = `translateY(${scrolled * -0.3}px)`;
+});
+
+// song filter
+
 let songs_list = [
     {titel: "Trance Viking",
     genre: "Psytrance",
