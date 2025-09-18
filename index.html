@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mein Portfolio</title>
 <link href="style.css" rel="stylesheet">
 
@@ -7,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@625&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+<script src="script.js"></script>
 
 </head>
 
@@ -72,26 +75,16 @@
     <h2>Meine Hobbies</h2>
     <div></div>
     <h3>Meine Songs:</h3>
+    <select onchange="filter_genre()" name="song_genre_filter" id="genre_filter">
+        <option value="Alles">Alles</option>
+        <option value="Hardtekk">Hardtekk</option>
+        <option value="Psytrance">Psytrance</option>
+        <option value="EDM">EDM</option>
+        <option value="Freestyle">Freestyle</option>
+    </select>
+
     <div id="songs">
-        <!-- Songkachel zu SoundCloud -->
-        <div class="song" href="https://soundcloud.com/game-crafter-633059615">
-            <img src="trance_viking.jpg" width="100%">
-            <p class="song_link"><a class="song_link" href="https://soundcloud.com/game-crafter-633059615/trance-viking">Trance Viking</a></p>
-        </div>
-        <div class="song">
-            <img src="suffocation.jpg" width="100%">
-            <p class="song_link"><a class="song_link" href="https://soundcloud.com/game-crafter-633059615/suffocation">Suffocation</a></p>
-        </div>
-        <div class="song">
-            <img src="summer_is_comming.jpg" width="100%">
-            
-            <p class="song_link"><a class="song_link" href="https://soundcloud.com/game-crafter-633059615/summer-is-coming">Summer is coming</a></p>
-        </div>
-        <div class="song">
-            <img src="transience.jpg" width="100%">
-            
-            <p class="song_link"><a class="song_link" href="https://soundcloud.com/game-crafter-633059615/transience">Transience</a></p>
-        </div>
+        <!-- Enthält Songkacheln zu SoundCloud -->
     </div>
 
 </section>
@@ -100,6 +93,7 @@
 
 <footer class="subtitle">
     <p>Erstellt von Tim Metzig</p>
+    <div id="reference">
     <p>
     Icons von
     <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">
@@ -112,6 +106,8 @@
     </a>
     .
     </p>
+    </div>
 </footer>
 
 </body>
+<!--https://av-vertrag.org/av-vertrag-generator/-->
