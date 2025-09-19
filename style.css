@@ -73,7 +73,7 @@ h2 {
 }
 
 #intro {
-    font-size: x-large;
+    font-size: 1.3rem;
     background-color: rgb(172, 172, 172, 0.6);
     backdrop-filter: blur(2px);
 }
@@ -121,6 +121,14 @@ h2 {
     font-size: auto;
     text-align: center;
 }
+
+button {
+
+}
+
+/* nützlich für Buttons oder allgemein klickbare Sachen: cursor: pointer
+oder transition: background-color 0.3s ease, transform 0.2s ease;
+*/
 
 #sidebar {
     background-color: black;
@@ -181,6 +189,7 @@ h2 {
 
 .description {
     font-size: medium;
+    font-weight: 200;
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 10px;
