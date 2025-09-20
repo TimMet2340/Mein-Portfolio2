@@ -27,8 +27,8 @@ body {
     background-image: url(BG.PNG);
     background-attachment: fixed;
     background-size: auto; */
-    margin: 20px;
-    padding: 20px;
+    margin: 2%;
+    padding: 2%;
 }
 
 h1 {
@@ -113,6 +113,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.848);
     border-radius: 20px;
     width: 200px;
+    border: 1px solid white;
 }
 
 .song_link {
@@ -123,7 +124,28 @@ h2 {
 }
 
 button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: medium;
+}
 
+select {
+    appearance: none;
+    background: url("caret-down.png"), rgba(0, 0, 0, 0.76);
+    background-repeat: no-repeat, repeat;
+    background-position: right 10px top 50%, 0 0;
+    background-size: 12px auto, auto;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    padding-right: 35px;
+    cursor: pointer;
+    font-size: medium;
 }
 
 /* nützlich für Buttons oder allgemein klickbare Sachen: cursor: pointer
@@ -140,10 +162,24 @@ oder transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 10px;
 }
 
+
+
 .legende {
     color: white;
     text-decoration: none;
     font-size: auto;
+}
+
+#contact {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    text-align: left;
+    position: static;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    font-size: small;
 }
 
 .legende:visited {
